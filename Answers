@@ -1,0 +1,6 @@
+https://dax3alcbhwkmw.cloudfront.net
+https://d2rybgiuuut621.cloudfront.net/devops-folder
+
+Assignemt 2 Amswer-
+
+ $ logfile.txt | sort | uniq -c | sort -nr | head -n 8 | awk '{ print $2 " " print $1 }'
