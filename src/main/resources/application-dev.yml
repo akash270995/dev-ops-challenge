@@ -1,0 +1,17 @@
+spring:
+  datasource:
+    password: khelplay
+    url: jdbc:postgresql://khelplay-dev.cxt7lyukami1.ap-south-1.rds.amazonaws.com:5432/game_service
+    username: khelplay
+    driver-class-name: org.postgresql.Driver
+    hikari:
+      maximum-pool-size: 100
+      minimumIdle: 30
+  jpa:
+    hibernate:
+      ddl-auto: update
+#    properties:
+#      hibernate:
+#        show_sql: true
+#        use_sql_comments: true
+#        format_sql: true

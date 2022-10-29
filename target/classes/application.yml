@@ -1,0 +1,12 @@
+server:
+  port: 3002
+spring:
+  profiles:
+    active: dev
+  jackson:
+    default-property-inclusion: NON_NULL
+    mapper:
+      accept-case-insensitive-enums: true
+  main:
+    allow-bean-definition-overriding: true
+swagger_base_path_mapping:
