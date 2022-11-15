@@ -1,7 +1,6 @@
 FROM openjdk:8-jdk-alpine
 VOLUME /tmp
-WORKDIR app
-COPY ./* /
+COPY ./* ./
 RUN ls
-RUN ./mvnw clean package 
+#RUN ./mvnw clean package 
 
