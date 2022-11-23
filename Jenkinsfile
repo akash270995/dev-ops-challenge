@@ -10,7 +10,7 @@ pipeline{
                 
                 script{
                     
-                    git branch: 'main', url: 'https://gitlab.com/akashmoni2304/dev-ops-challenge.git'
+                    git branch: 'master', url: 'https://gitlab.com/akashmoni2304/dev-ops-challenge.git'
                 }
             }
         }
