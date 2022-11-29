@@ -1,6 +1,12 @@
 pipeline{
     
     agent any 
+
+    environment {
+        imageName = "myphpapp"
+        registryCredentials = "nexus"
+        registry = "3.110.147.1:8081/"
+        dockerImage = ''
     
     stages {
         
@@ -52,7 +58,17 @@ pipeline{
                 }
             }
         }
-        
+
+        stage('Building image') {
+
+             steps{
+                
+                script {
+                         
+                       dockerImage = docker.build imageName
+                }
+            }           
+        }
         
     }
 }        
