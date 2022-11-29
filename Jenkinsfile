@@ -48,6 +48,7 @@ pipeline{
                 script{
                     
                     sh 'mvn test'
+                    junit 'target/surefire-reports/TEST-com.gameservice.outcome.OutcomeApplicationTests.xml'
                 }
             }
         }
